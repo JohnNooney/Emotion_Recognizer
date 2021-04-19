@@ -7,7 +7,7 @@ ANN model written in Visual Studio's ML.Net that classifies the emotion expresse
 
 Default Landmark Map            |  Landmark Map w/ Regions | Applied Map to Image 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg" width="300" height="300">|  <img src="https://user-images.githubusercontent.com/71711553/115223073-52240c00-a103-11eb-8b3c-1f9a100dcdcf.png" width="300" height="300"> | <img src="https://miro.medium.com/max/455/1*Y1pp8dGs9NdWvh8kX3YrhA.png" width="300" height="300">
+<img src="https://pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg" width="300" height="300">|  <img src="https://user-images.githubusercontent.com/71711553/115223073-52240c00-a103-11eb-8b3c-1f9a100dcdcf.png" width="300" height="300"> | <img src="![image](https://user-images.githubusercontent.com/71711553/115224172-7502f000-a104-11eb-86cb-166fa070deb8.png)" width="300" height="300">
 
 ## ANN Model Explained
 
