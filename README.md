@@ -11,4 +11,4 @@ Default Landmark Map            |  Landmark Map w/ Regions | Applied Map to Imag
 
 ## ANN Model Explained
 
-This model takes our feature vector
+This model takes our feature vector data and maps it to a key value pair. Then the data gets sent through a Neural Network that calculates the weights and biases for getting the intended classifications
