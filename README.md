@@ -3,7 +3,7 @@ ANN model written in Visual Studio's ML.Net that classifies the emotion expresse
 
 ## Pre-Processing Visual Aid
 
-[Default Map before face applied](https://pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg)
+[!Default Map before face applied](https://pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg)
 
 ## ANN Model Explained
 
