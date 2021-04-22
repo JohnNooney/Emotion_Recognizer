@@ -15,7 +15,7 @@ namespace EmotionClassification
             Console.WriteLine("Welcome to the Emotion Classifier.");
             while (true)
             {
-                Console.WriteLine("Enter <1> to train model, <2> to test image, <3> to exit ");
+                Console.WriteLine("Enter <1> to train model, <2> to test image, <3> to create csv testing data,, <4> to clear console text, <5> to exit ");
                 var input = Console.ReadLine().Trim();
 
                 if (input == "1")
@@ -40,7 +40,19 @@ namespace EmotionClassification
                     }
 
                 }
-                else if (input == "3")
+                 else if(input == "3")
+                {
+                    Console.WriteLine("");
+                    fExctractor.CreateCSV();
+                    Console.WriteLine("\n");
+
+                }
+                else if (input == "4")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Welcome to the Emotion Classifier.");
+                }
+                else if (input == "5")
                 {
                     Environment.Exit(0);
                 }
