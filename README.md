@@ -29,5 +29,5 @@ The Maximum Entropy algorthim is a logistic regression algorithm at core. Meanin
 
 Logisitic vs Linerar Regression         |  Multinominal Logisitic Regression 
 :-------------------------:|:-------------------------:
-![https://www.machinelearningplus.com/wp-content/uploads/2017/09/linear_vs_logistic_regression.jpg](Logisitic Regression vs Linear Regression)|  ![https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg](Logisitic Regression vs Linear Regression)
+![Logisitic Regression vs Linear Regression](https://www.machinelearningplus.com/wp-content/uploads/2017/09/linear_vs_logistic_regression.jpg)|  ![Logisitic Regression vs Linear Regression](https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg)
 
