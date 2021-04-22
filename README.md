@@ -27,7 +27,7 @@ The algorthim used is that of Linear nature: the Stochastic dual coordinated asc
 
 The Maximum Entropy algorthim is a logistic regression algorithm at core. Meaning the main idea is to find a relationship between features and probability of a particular outcome. With logistic regression our prediciton will always be within the bounds of a certain area: 0% to 100%. Whereas with linear regression the prediciton is based on the overall range of inputs. But since maximum entropy is being used in a MultiClass classification manner it then becomes a multinomial logistic regression algorithm.
 
-Logisitic vs Linerar Regression         |  Multinominal Logisitic Regression 
+Linear vs Logisitic Regression         |  Multinominal Logisitic Regression 
 :-------------------------:|:-------------------------:
 ![Logisitic Regression vs Linear Regression](https://www.machinelearningplus.com/wp-content/uploads/2017/09/linear_vs_logistic_regression.jpg)|  ![Logisitic Regression vs Linear Regression](https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg)
 
