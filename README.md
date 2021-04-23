@@ -1,5 +1,5 @@
 # Emotion Recognizer
-ANN model written in Visual Studio's ML.Net that classifies the emotion expressed in a photograph of someones face. Before the model is able to classify the image, the image must be pre-processed as to extract the feature vector. This feature extraction is done by using a tool called DLibDotNet. With this tool we are able to map out specific points on the face in the image. With this map we calculate specific distances from certaian zones on the face. Ex: Distance from left eye to top of left eyebrow. With the values we get from these certain zones we are then able to create our feature vector and assign a specfic emotion to it. All the training data went through this pre-processing in order to be prepared correctly.
+This is an ANN model written in Visual Studio's ML.Net that classifies the emotion expressed in a photograph of someones face. In ML.Net a model is refered to as a transformer, in this project the SdcaMaximumEntropyMulticlassTrainer is utilized to tune the necessary weights for our model to make predicitons.
 
 ## Prerequisites
 
@@ -12,6 +12,30 @@ Because of this programs utilisation of DlibDotNet, ensure that the **shape_pred
 For the program option to create a CSV file from the training data ensure that you either have the Image directory included in this repository or follow the same structure as this repository: Images > 'Data Set' > 'Emotion Labels' > 'Image File'
 
 In the FeatureExtraction.cs file change the ``` _path ``` variable to the location of your directory
+
+## Pre-Processing
+
+Before the model is able to classify the image, the image must be pre-processed to extract the feature vector. This feature extraction is done by using a tool called DlibDotNet. With this tool we are able to map out specific points on the face in the image. With this map we calculate specific distances from certaian zones on the face. Ex: Distance from left eye to top of left eyebrow. With the values we get from these certain zones we are then able to create our feature vector and assign a specfic emotion to it. All the training data went through this pre-processing in order to be prepared correctly.
+
+The specific process that was used to calculate each regions distance is as follows:
+
+- Left eyebrow:
+this will be a sum of the normalised distances between the left eyebrow landmarks and the inner point of the left eye (see Figure 1). Calculate each of the 4 normalised eyebrow distances by first subtracting point #40 from each left eyebrow point to produce 4 non-normalised  distances. Then divide each  of  the  non-normalised distances by the distance between points #40 and point #22 –this normalisesthe values according to the size of the specific face. Finally, sum all 4 normalised distances to produce just one “left eyebrow” feature and store it in a variable.
+
+- Right eyebrow:
+as above, but using the inner point of the right eye #43 and the right eyebrow points. Make sure to normalise the distances by diving with the corresponding right-side distance (coloured blue in Figure 1).
+
+- Left  lip:
+as  above,  but  the  stationary  point  is  #34  and  the  distance  used  for normalisation is between #34 and #52. Use the 3 points on the left top part of the lip to construct the non-normalised distances: i.e. #49, #50, #51.
+
+- Right lip:
+as above, but use the 3 points on the right top part of the lip: i.e. #53, #54, #55.
+
+- Lip Width:
+this is just the distance between #49 and #55 divided by distance between #34 and #52 (for normalisation)
+
+- Lip Height:
+this is just the distance between #52 and #58 divided by distance between #34 and #52 (for normalisation
 
 ## Pre-Processing Visual Aid
 
