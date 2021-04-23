@@ -20,10 +20,10 @@ Before the model is able to classify the image, the image must be pre-processed 
 The specific process that was used to calculate each regions distance is as follows:
 
 - **Left eyebrow**:
-this will be a sum of the normalised distances between the left eyebrow landmarks and the inner point of the left eye (see Figure 1). Calculate each of the 4 normalised eyebrow distances by first subtracting point #40 from each left eyebrow point to produce 4 non-normalised  distances. Then divide each  of  the  non-normalised distances by the distance between points #40 and point #22 –this normalisesthe values according to the size of the specific face. Finally, sum all 4 normalised distances to produce just one “left eyebrow” feature and store it in a variable.
+this will be a sum of the normalised distances between the left eyebrow landmarks and the inner point of the left eye (see Figure 2). Calculate each of the 4 normalised eyebrow distances by first subtracting point #40 from each left eyebrow point to produce 4 non-normalised  distances. Then divide each  of  the  non-normalised distances by the distance between points #40 and point #22 –this normalisesthe values according to the size of the specific face. Finally, sum all 4 normalised distances to produce just one “left eyebrow” feature and store it in a variable.
 
 - **Right eyebrow**:
-as above, but using the inner point of the right eye #43 and the right eyebrow points. Make sure to normalise the distances by diving with the corresponding right-side distance (coloured blue in Figure 1).
+as above, but using the inner point of the right eye #43 and the right eyebrow points. Make sure to normalise the distances by diving with the corresponding right-side distance (coloured blue in Figure 2).
 
 - **Left lip**:
 as  above,  but  the  stationary  point  is  #34  and  the  distance  used  for normalisation is between #34 and #52. Use the 3 points on the left top part of the lip to construct the non-normalised distances: i.e. #49, #50, #51.
@@ -39,7 +39,7 @@ this is just the distance between #52 and #58 divided by distance between #34 an
 
 ## Pre-Processing Visual Aid
 
-Default Landmark Map            |  Landmark Map w/ Regions | Applied Map to Image 
+Default Landmark Map (Fig. 1)           |  Landmark Map w/ Regions (Fig. 2) | Applied Map to Image (Fig. 3)
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg" width="300" height="300">|  <img src="https://user-images.githubusercontent.com/71711553/115223073-52240c00-a103-11eb-8b3c-1f9a100dcdcf.png" width="300" height="300"> | <img src="https://user-images.githubusercontent.com/71711553/115224328-a4196180-a104-11eb-843e-0ea9e41f2a42.png" width="200" height="300">
 
