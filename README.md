@@ -25,7 +25,9 @@ This model takes our feature vector data and maps it to a key value pair. Then t
 
 The algorthim used is that of Linear nature: the Stochastic dual coordinated ascent(SDCA) Maximum Entropy trainer. This algorthim makes multiclass classifications scalable, fast, cheap to train, and cheap to predict. They scale by the number of features and approximately by the size of the training data set. Also with this algorthim any hyperparameter tuning is not needed since SDCA algortithms yield good default performance.
 
-The Maximum Entropy algorthim is a logistic regression algorithm at core. Meaning the main idea is to find a relationship between features and probability of a particular outcome. With logistic regression our prediciton will always be within the bounds of a certain area: 0% to 100%. Whereas with linear regression the prediciton is based on the overall range of inputs. But since maximum entropy is being used in a MultiClass classification manner it then becomes a multinomial logistic regression algorithm.
+The Maximum Entropy algorthim is a logistic regression algorithm at core. Meaning the main idea is to find a relationship between features and probability of a particular outcome. With logistic regression our prediciton will always be within the bounds of a certain area: 0% to 100%. Whereas with linear regression the prediciton is based on the overall range of inputs. 
+
+With logistic regression, normally you will only be left with one prediciton but since maximum entropy is being used in a MultiClass classification manner it then becomes a multinomial logistic regression algorithm. So essentially for every class that exists there will be a probability associated with it and the class with the highest probablity will be the models prediction.
 
 Linear vs Logisitic Regression         |  Multinominal Logisitic Regression 
 :-------------------------:|:-------------------------:
