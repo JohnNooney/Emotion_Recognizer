@@ -19,22 +19,22 @@ Before the model is able to classify the image, the image must be pre-processed 
 
 The specific process that was used to calculate each regions distance is as follows:
 
-- Left eyebrow:
+- **Left eyebrow**:
 this will be a sum of the normalised distances between the left eyebrow landmarks and the inner point of the left eye (see Figure 1). Calculate each of the 4 normalised eyebrow distances by first subtracting point #40 from each left eyebrow point to produce 4 non-normalised  distances. Then divide each  of  the  non-normalised distances by the distance between points #40 and point #22 –this normalisesthe values according to the size of the specific face. Finally, sum all 4 normalised distances to produce just one “left eyebrow” feature and store it in a variable.
 
-- Right eyebrow:
+- **Right eyebrow**:
 as above, but using the inner point of the right eye #43 and the right eyebrow points. Make sure to normalise the distances by diving with the corresponding right-side distance (coloured blue in Figure 1).
 
-- Left  lip:
+- **Left lip**:
 as  above,  but  the  stationary  point  is  #34  and  the  distance  used  for normalisation is between #34 and #52. Use the 3 points on the left top part of the lip to construct the non-normalised distances: i.e. #49, #50, #51.
 
-- Right lip:
+- **Right lip**:
 as above, but use the 3 points on the right top part of the lip: i.e. #53, #54, #55.
 
-- Lip Width:
+- **Lip Width**:
 this is just the distance between #49 and #55 divided by distance between #34 and #52 (for normalisation)
 
-- Lip Height:
+- **Lip Height**:
 this is just the distance between #52 and #58 divided by distance between #34 and #52 (for normalisation
 
 ## Pre-Processing Visual Aid
