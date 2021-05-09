@@ -1,6 +1,8 @@
 # Emotion Recognizer
 This is an ANN model written in Visual Studio's ML.Net that classifies the emotion expressed in a photograph of someones face. In ML.Net a model is refered to as a transformer, in this project the SdcaMaximumEntropyMulticlassTrainer is utilized to tune the necessary weights for our model to make predicitons.
 
+https://docs.google.com/document/d/1G0xSXwS3xZVEUizxkLUPms94Lj71DLfiQ3szDTp_gRw/edit?usp=sharing
+
 ## Prerequisites
 
 Before running this program ensure the following NuGet packages are installed. 
