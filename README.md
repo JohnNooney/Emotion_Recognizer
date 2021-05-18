@@ -59,3 +59,5 @@ Linear vs Logisitic Regression         |  Multinominal Logisitic Regression
 :-------------------------:|:-------------------------:
 ![Logisitic Regression vs Linear Regression](https://www.machinelearningplus.com/wp-content/uploads/2017/09/linear_vs_logistic_regression.jpg)|  ![Logisitic Regression vs Linear Regression](https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg)
 
+Before sending the training data through the model’s pipeline it is recommended to partition the training data into two; training and testing data. This will help test our model after training so that instead of testing it on the previously seen and trained on data, to test it with unseen data. This way more accurate results of the model’s performance will be seen. A 80/20 split was used in this instance.
+
